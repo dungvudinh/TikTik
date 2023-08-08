@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TikTik/static/css/main.e6c13ad2.css",
+    "main.js": "/TikTik/static/js/main.54277093.js",
+    "index.html": "/TikTik/index.html",
+    "main.e6c13ad2.css.map": "/TikTik/static/css/main.e6c13ad2.css.map",
+    "main.54277093.js.map": "/TikTik/static/js/main.54277093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.54277093.js"
+  ]
+}
