@@ -204,9 +204,53 @@
     }
 }
 //Search result popup 
-.search-result
+.search-transfer 
 {
-    width:100%;
-    height:200px;
-    background-color: red;
+    width:calc(var(--main-layout-header-search-width) - 16px);
+    margin-top:8px;
+    padding-top:8px;
+    box-sizing:border-box;
+    overflow:hidden auto;
+    .search-title
+    {
+        padding:5px 12px 3px;
+        font-weight: 600;
+        line-height: 22px;
+        color:rgba(22,24,35,0.75)
+    }
+    .search-item 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding:9px 16px;
+        .mark-dot_icon
+        {
+            width: 12px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span 
+        {
+            color:var(--primary-color);
+        }
+        h4 
+        {
+            padding-right:12px;
+            padding-left: 8px;
+            font-weight: 500;
+        }
+    }
+}
+.mark-dot_icon
+{
+    div 
+    {
+        width: 6px;
+        height: 6px;
+        background: rgba(22, 24, 35, 0.34);
+        border-radius: 50%;
+    }
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisVertical, faMagnifyingGlass, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical, faFireFlameCurved, faMagnifyingGlass, faSpinner, faUpLong } from "@fortawesome/free-solid-svg-icons";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; 
 import Popper from "~/components/Popper";
@@ -25,15 +25,35 @@ function Header()
                 <div className={cx('center')}>
                     <Tippy
                         render={attrs => (
-                            <Popper >
-                                <div className={cx('search-result')}>
-                                    Result
-                                </div>
-                            </Popper>
+                            <div className={cx('container')} tabIndex={-1} {...attrs}>
+                                <Popper>
+                                    <ul className={cx('search-transfer')}>
+                                        <div className={cx('search-title')}>You may like</div>
+                                        <li className={cx('search-item')}>
+                                            <span>
+                                                <FontAwesomeIcon icon={faUpLong} />
+                                            </span>
+                                            <h4>Anh thư và chú văn</h4>
+                                        </li>
+                                        <li className={cx('search-item')}>
+                                            <span>
+                                                <FontAwesomeIcon icon={faFireFlameCurved}/>
+                                            </span>
+                                            <h4>Anh thư và chú văn</h4>
+                                        </li>
+                                        <li className={cx('search-item')}>
+                                            <div className={cx('mark-dot_icon')}>
+                                                <div></div>
+                                            </div>
+                                            <h4>Anh thư và chú văn</h4>
+                                        </li>
+                                    </ul>
+                                </Popper>
+                            </div>
                         )}
-                    visible={true}>
+                    visible={true} interactive>
                         <div className={cx('center-search')}>
-                            <input type="text" className={cx('center-search_input')} placeholder="Search" spellCheck={false} onFocus={()=>setShowResult(true)} />
+                            <input type="text" className={cx('center-search_input')} placeholder="Search" spellCheck={false} onFocus={()=>setShowResult(true)} onBlur={()=>setShowResult(false)} />
                             <div className={cx('center-icon_wrapper')}>
                                 <span className={cx('center-icon_wrapper__cancel')}><CancelSearchIcon /></span>
                                 <span className={cx('center-icon_wrapper__loading')}><FontAwesomeIcon icon={faSpinner}/></span>
