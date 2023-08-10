@@ -1,7 +1,11 @@
 :root 
 {
-    --defalt-layout-header-height:60px;
-    --default-layout-sidebar-width:240px;
+    --main-layout-header-height:60px;
+    --main-layout-sidebar-width:240px;
+    --main-layout-header-search-width: 516px;
+    --text-color:#161823;
+    --primary-color:rgba(254, 44, 85, 1);
+    --background-color-hover-1: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
 }
 * 
 {
