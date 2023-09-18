@@ -1,0 +1,50 @@
+button 
+{
+    cursor:pointer;
+}
+.wrapper 
+{
+    border:none;
+    &.rounded-4 
+    {
+        border-radius: 4px;
+    }
+    &.rounded-2 
+    {
+        border-radius: 2px;
+    }  
+    &.sm
+    {
+        min-width: 100px;
+        min-height:36px;
+        padding:6px 8px;
+        line-height:21px;
+        
+    }
+    &.md 
+    {
+        min-width: 110px;
+        padding: 0 16px;
+        height:36px;
+        display: flex;
+        justify-content: center;
+    }
+    &.primary 
+    {
+        background-color: var(--primary-color);
+        color:#fff;
+        letter-spacing: 0.03px;
+        &:hover 
+        {
+            background:var(--background-color-hover-1);
+        }
+    }
+    &.black-secondary 
+    {
+        border:1px solid var(--border-lblack-color);
+        &:hover 
+        {
+            background:var(--background-color-hover-2);
+        }
+    }
+}

@@ -6,6 +6,10 @@
     --text-color:#161823;
     --primary-color:rgba(254, 44, 85, 1);
     --background-color-hover-1: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+    --background-color-hover-2: rgba(22, 24, 35, 0.03);
+    --border-lblack-color:rgba(22, 24, 35, 0.12);
+    --background-popup-item: rgba(84, 84, 84, 0.92);
+    --text-light-black:rgba(22, 24, 35, 0.5);
 }
 * 
 {
@@ -23,4 +27,9 @@ body
     font-size: 1.6rem;
     line-height:1.5;
     text-rendering: optimizespeed;
+}
+a 
+{
+    text-decoration: none;
+    list-style-type: none;
 }
