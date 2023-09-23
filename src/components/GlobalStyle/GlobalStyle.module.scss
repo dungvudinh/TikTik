@@ -17,7 +17,21 @@
     padding:0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TikTokFont';
+    src: url('/assets/fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
 html 
 {
     font-size: 62.5%;
@@ -27,6 +41,7 @@ body
     font-size: 1.6rem;
     line-height:1.5;
     text-rendering: optimizespeed;
+    font-family: 'TikTokFont';
 }
 a 
 {

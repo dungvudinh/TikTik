@@ -1,12 +1,3 @@
-import styles from "./Popper.module.scss";
-import classNames from "classnames/bind";
-const cx = classNames.bind(styles);
-function Popper({children})
-{
-    return (
-        <div className={cx('wrapper')}>
-            {children}
-        </div>
-    )
-}
-export default Popper;
+export {default as SearchPopup} from './Search/Index';
+export {default as Menu} from './Menu'; 
+export {default as PopperWrapper} from './Wrapper';
