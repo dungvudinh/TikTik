@@ -1,0 +1,115 @@
+.user-container
+{
+    padding:16px 0;
+    .following-account_title
+    {
+        padding: 0 8px;
+        margin-bottom:8px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 18px;
+        color:var(--text-light-black);
+    }
+    .account-list
+    {
+        .account-item 
+        {
+            .container 
+            {
+                display: flex;
+                flex-direction: row;
+                padding:8px;
+                align-items: center;
+                position: relative;
+                border-radius: 4px;
+                transition: all 0.2s ease-in-out 0s;
+                color:var(--text-color);
+                &:hover 
+                {
+                    background-color: var(--background-color-hover-2);
+                }
+                .user-avatar
+                {
+                    width: 32px;
+                    height: 32px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right:12px;
+                    .image 
+                    {
+                        width: 26px;
+                        height:26px;
+                        position: absolute;
+                        left:50%;
+                        top:50%;
+                        transform: translate(-50%, -50%);
+                        overflow: hidden;
+                        border-radius: 50%;
+                        display: inline-block;
+                      
+                        img 
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .user-content
+                {
+                    flex-grow: 1;
+                    height:32px;
+                    .nick-name
+                    {
+                        display: flex;
+                        flex-direction: row;
+                        .user-title 
+                        {
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            text-overflow:ellipsis;
+                            line-height:21px;
+                            white-space:nowrap;
+                        }
+                        .user-icon 
+                        {
+                            margin-left:4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                        }
+                    }
+                    .name
+                    {
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                        line-height:15px;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;
+                        overflow:hidden;
+                        color:var(--text-light-black);
+                    }
+                }
+
+            }
+        }
+    }
+    .following-see_all
+    {
+        background-color: transparent;
+        border:none;
+        padding:0 8px;
+        margin-top:8px;
+        cursor:pointer;
+        p 
+        {
+            color:var(--primary-color);
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height:18px;
+            font-family: var(--font-family);
+        }
+    }
+   
+}

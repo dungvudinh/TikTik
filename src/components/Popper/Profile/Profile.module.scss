@@ -1,0 +1,84 @@
+.profile-container
+{
+    padding:20px;
+    width: 320px;
+    .profile-content
+    {
+        padding:20px;
+        .head-container
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom:12px;
+            a 
+            {
+                span 
+                {
+                    overflow:hidden;
+                    white-space: nowrap;
+                    text-align: center;
+                    width:44px;
+                    height:44px;
+                    border-radius: 50%;
+                    background-color: rgba(136, 136, 136, 0.5);
+                    position: relative;
+                    display: inline-block;
+                    img 
+                    {
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+           
+        }
+        .user-nickname
+        {
+            color:var(--text-color);
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 24px;
+        }
+        .username 
+        {
+            font-size: 1.4rem;
+            font-weight:600 ;
+            line-height: 18px;
+            color:var(--text-color);
+        }
+        .user-status
+        {
+            margin-top:8px;
+            .count 
+            {
+                font-weight: 700;
+                font-size: 1.7rem;
+                line-height: 20px;
+                display: inline-block;
+                margin-right:6px;
+            }
+            .user_card-follower
+            {
+                margin-right: 12px;
+            }
+            .user_card-follower, .user_card-like
+            {
+                color:var(--text-light-black);
+                font-size: 1.7rem;
+                line-height:20px;
+            }
+
+        }
+        .user_card-bio
+        {
+            font-size: 1.4rem;
+            line-height:18px;
+            padding-top:17px;
+            margin-top: 16px;
+            border-top:1px solid var(--border-black-color);
+        }
+    }
+}

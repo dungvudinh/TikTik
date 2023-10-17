@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
@@ -29,5 +30,8 @@ function MenuItem({item, onClick}) {
         </li>
      );
 }
-
+MenuItem.propTypes = {
+    item:PropTypes.object.isRequired, 
+    onClick: PropTypes.func
+}
 export default MenuItem;

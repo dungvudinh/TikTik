@@ -1,0 +1,14 @@
+.homepage 
+{
+    position: relative;
+    margin:0 auto;
+    width: 100%;
+    min-width: 420px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .container {
+    }
+}

@@ -37,6 +37,8 @@
     .see-more_popup
     {
         padding:8px 0;
+        max-height:590px;
+        overflow: auto;
         // min-width: 223px;
         .list-item_wrapper
         {

@@ -1,0 +1,67 @@
+.container
+{
+    margin-bottom:8px;
+    .list-menu 
+    {
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        li .menu-item 
+        {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding:8px;
+            border-radius: 4px;
+            transition: all 0.2 ease-in-out;
+            color:var(--text-color);
+           
+            
+            &:hover 
+            {
+                background-color: var(--background-color-hover-2);
+            }
+            .gr-icon
+            {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .solid-icon 
+                {
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%, -50%);
+                    visibility: hidden;
+                }
+                
+            }
+            &.active 
+            {
+                span 
+                {
+                    color:var(--primary-color);
+                }
+                .solid-icon
+                {
+                    visibility: visible;
+                }
+                .icon 
+                {
+                    visibility: hidden;
+                }
+                
+            }
+          
+            .title 
+            {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 24px;
+                margin-left:8px;
+                color:var(--text-color);
+            }
+        }
+    }
+}

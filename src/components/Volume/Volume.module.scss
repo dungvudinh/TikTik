@@ -1,0 +1,98 @@
+.voice_control-container
+{
+    position: absolute;
+    bottom:26px;
+    left:unset;
+    right:12px;
+    color:#fff;
+    .volume_control-container
+    {
+        width: 24px;
+        height: 64px;
+        margin:8px 7px 0px;
+        display: block;
+        cursor: initial;
+        background-color: rgba(22,24,35,0.34);
+        border-radius:32px;
+        position: relative;
+        visibility: visible;
+        &.muted 
+        {
+            .volume_control-circle
+            {
+                transform:translateY(36px);
+            }
+        }
+        .volume_control-progress
+        {
+            width: 2px;
+            height: 48px;
+            background-color: rgba(255,255,255,0.34);
+            position: absolute;
+            left:11px;
+            top:8px;
+            bottom:8px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .volume_control-circle
+        {
+            width: 12px;
+            height: 12px;
+            border-radius:50%;
+            background-color:rgba(255,255,255);
+            position: absolute;
+            bottom:8px;
+            // user-select: unset;
+            cursor: pointer;
+            z-index:1;
+            left:6px;
+        }
+        .volume_control-bar
+        {
+            width: 2px;
+            height:48px;
+            background-color: rgba(255,255,255);
+            position: absolute;
+            left:11px;
+            bottom:8px;
+            top:8px;
+            cursor: pointer;
+            transform-origin: center bottom;
+            border-radius: 4px;
+            // display: none;
+        }
+    }
+  
+    .mute_icon-container
+    {
+        padding:8px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        &:hover ~ .volume_control-container
+        {
+            visibility: hidden;
+        }
+        .sound-icon 
+        {
+            position: absolute;
+            left:50%;
+            top:57%;
+            transform:translate(-50%, -50%);
+            opacity: 0;
+            &.active 
+            {
+                opacity: 1;
+            }
+        }
+        .mute-icon 
+        {
+            opacity: 0;
+            &.active 
+            {
+                opacity: 1;
+            }
+        }
+    }
+}
